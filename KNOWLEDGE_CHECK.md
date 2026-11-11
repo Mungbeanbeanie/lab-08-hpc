@@ -12,7 +12,20 @@ Redirect the command's output to `results/job-history.txt` and include the file 
 
 **Your answer:** Provide the entire command you used, including all CLI options.
 
-...
+History:
+    User      State               Start    Elapsed 
+------------ -------------------- -------------------- ---------- ---------- --------- ---------- ------------------- ---------- 
+22457635               ood_vscode         udc-aw32-1c0 interacti+     ds2022    hcz6jh CANCELLED+ 2026-11-04T12:02:03   00:00:19 
+22457635.ba+                batch         udc-aw32-1c0                ds2022            CANCELLED 2026-11-04T12:02:03   00:00:20 
+22833008_[1]            summarize        None assigned    gpu-mig     ds2022    hcz6jh    PENDING             Unknown   00:00:00 
+22836480_[1+            summarize        None assigned    gpu-mig     ds2022    hcz6jh    PENDING             Unknown   00:00:00 
+
+Command: sacct --starttime=2026-11-04 \
+  --format=JobID,JobName%20,NodeList%20,Partition,Account,User,State,Start,Elapsed \
+  > results/job-history.txt
+
+NOTE: was still waiting for jobs to start/finish 
+
 
 ## 2. Slurm: did every array task run at the same time?
 
@@ -24,7 +37,7 @@ You submitted your entire job array with one `sbatch` command, but Slurm schedul
 
 **Your answer:** Did all tasks in the array start at the same time? Was the elapsed time identical for every task? Explain why or why not.
 
-...
+Based on what I saw, no. However, at the time that I had to submit this, my array's tasks were still queued. However I can infer that they did not start at the same time because it is done in batches with different amounts of work.
 
 ## 3. Slurm: did my job use what it asked for?
 
@@ -36,5 +49,5 @@ Suppose your next job array has 1,000 books instead of 101. Before you submit it
 
 **Your answer:** How much memory and time did the task use, compared with what your script asked for? What would you change in your script, and why?
 
-...
+I cannot complete this question because my job was not processed.
 

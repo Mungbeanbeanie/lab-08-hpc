@@ -1,0 +1,6 @@
+JobID                     JobName             NodeList  Partition    Account      User      State               Start    Elapsed 
+------------ -------------------- -------------------- ---------- ---------- --------- ---------- ------------------- ---------- 
+22457635               ood_vscode         udc-aw32-1c0 interacti+     ds2022    hcz6jh CANCELLED+ 2026-11-04T12:02:03   00:00:19 
+22457635.ba+                batch         udc-aw32-1c0                ds2022            CANCELLED 2026-11-04T12:02:03   00:00:20 
+22833008_[1]            summarize        None assigned    gpu-mig     ds2022    hcz6jh    PENDING             Unknown   00:00:00 
+22836480_[1+            summarize        None assigned    gpu-mig     ds2022    hcz6jh    PENDING             Unknown   00:00:00 

@@ -1,0 +1,6 @@
+JobID           JobName      User    Account  Partition  AllocCPUS              Submit               Start    Elapsed      State ExitCode 
+------------ ---------- --------- ---------- ---------- ---------- ------------------- ------------------- ---------- ---------- -------- 
+22457635     ood_vscode    hcz6jh     ds2022 interacti+          1 2026-11-04T11:59:38 2026-11-04T12:02:03   00:00:19 CANCELLED+      0:0 
+22457635.ba+      batch               ds2022                     1 2026-11-04T12:02:03 2026-11-04T12:02:03   00:00:20  CANCELLED     0:15 
+22833008_[1]  summarize    hcz6jh     ds2022    gpu-mig          0 2026-11-11T16:32:59             Unknown   00:00:00    PENDING      0:0 
+22836480_[1+  summarize    hcz6jh     ds2022    gpu-mig          0 2026-11-11T17:13:22             Unknown   00:00:00    PENDING      0:0 
